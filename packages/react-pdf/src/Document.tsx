@@ -537,7 +537,7 @@ const Document: React.ForwardRefExoticComponent<
         loadingPromise.finally(() => {
           loadingTask._worker.destroy()
           loadingTask.destroy()
-        );
+        });
       };
     },
     [options, pdfDispatch, source],
